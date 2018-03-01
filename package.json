@@ -1,0 +1,31 @@
+{
+  "name": "simple-translation",
+  "version": "1.0.0",
+  "description": "A super basic and simple way to do language translations. Auto detects language from the browser. Supports compiled strings. Aims to be an uncomplicated translation package",
+  "main": "simple-translation.js",
+  "directories": {
+    "example": "example",
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ssshake/simple-translation.git"
+  },
+  "keywords": [
+    "translation",
+    "i18n",
+    "locale",
+    "tanslate",
+    "internationalization",
+    "language"
+  ],
+  "author": "Richard Bettridge",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ssshake/simple-translation/issues"
+  },
+  "homepage": "https://github.com/ssshake/simple-translation#readme"
+}

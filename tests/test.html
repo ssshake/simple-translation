@@ -1,0 +1,16 @@
+<html>
+
+  <!-- This is a really crummy test that just checks that both dictionaries have the same keys. You should probably do a proper test as part of your build steps. -->
+
+  <script type="module">
+    import { getLocale } from '../simple-translation.js'
+
+    console.log("Comparing english dictionary to french to ensure all of the required keys are present.")
+
+    let englishKeys = Object.keys(getLocale('en').messages).sort()
+    let frenchKeys = Object.keys(getLocale('fr').messages).sort()
+
+    console.log("Do english and french dictionaries match? " + (JSON.stringify(englishKeys) === JSON.stringify(frenchKeys)))
+  </script>
+  
+</html>

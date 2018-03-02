@@ -18,32 +18,32 @@
   <script type="module">
 
     //Example using automatic browser language detection
-    import translate from '../simple-translation.js'
+    import SimpleTranslate from '../simple-translation.js'
 
     import english from '../languages/english.js'
     import french from '../languages/french.js'
 
-    let t = new translate(english, french)
+    let translate = new SimpleTranslate(english, french)
 
-    t.registerLanguage(english)
-    t.registerLanguage(french)
-
-
-    console.log(t.message('exampleString'))
-
-    console.log(t.message('exampleOfStringThatDoesntExist'))
-
-    console.log(t.message('exampleString', 'fr'))
-
-    console.dir(t.getLocale('fr').messages.exampleString)
+    translate.registerLanguage(english)
+    translate.registerLanguage(french)
 
 
-    document.getElementById('string-example').innerHTML = t.message('exampleString')
-    document.getElementById('function-example').innerHTML = t.message('exampleFunction')('test')
-    document.getElementById('missing-string-example').innerHTML = t.message('exampleOfStringThatDoesntExist')
+    console.log(translate.message('exampleString'))
 
-    document.getElementById('string-example-french').innerHTML = t.message('exampleString', 'fr')
-    document.getElementById('function-example-french').innerHTML = t.message('exampleFunction', 'fr')('test')
+    console.log(translate.message('exampleOfStringThatDoesntExist'))
+
+    console.log(translate.message('exampleString', 'fr'))
+
+    console.dir(translate.getLocale('fr').messages.exampleString)
+
+
+    document.getElementById('string-example').innerHTML = translate.message('exampleString')
+    document.getElementById('function-example').innerHTML = translate.message('exampleFunction')('test')
+    document.getElementById('missing-string-example').innerHTML = translate.message('exampleOfStringThatDoesntExist')
+
+    document.getElementById('string-example-french').innerHTML = translate.message('exampleString', 'fr')
+    document.getElementById('function-example-french').innerHTML = translate.message('exampleFunction', 'fr')('test')
 
 </script>
 

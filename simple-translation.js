@@ -1,4 +1,4 @@
-export default class Translate{
+export default class SimpleTranslate{
   constructor(...languageFiles){
     this.localeData = {}
     this.browserLanguageCode = (

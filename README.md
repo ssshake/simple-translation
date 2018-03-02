@@ -37,44 +37,44 @@ see *./examples/index.html*
 - register each language
 - call the message() method to get a translated string
 ```
-    import translate from '../simple-translation.js'
+    import SimpleTranslate from '../simple-translation.js'
 
     import english from '../languages/english.js'
     import french from '../languages/french.js'
 
-    let t = new translate()
+    let translate = new SimpleTranslate()
 
-    t.registerLanguage(english)
-    t.registerLanguage(french)
+    translate.registerLanguage(english)
+    translate.registerLanguage(french)
 ```
 
 ## Registering language files
 
 Option A - *specify each language file individually using the registerLanguage() method*
 
-```t.registerLanguage(english)```
+```translate.registerLanguage(english)```
 
 Option B - *specify the language files upon new translate, which will be automatically registered*
 
-```let t = new translate(english, french)```
+```let translate = new SimpleTranslate(english, french)```
 
 ## Render a static translation
-```t.message('exampleString')```
+```translate.message('exampleString')```
 
 returns: ```Example string```
 
 ## Render a dynamic translation
-```t.message('exampleFunction')('test')```
+```translate.message('exampleFunction')('test')```
 
 returns: ```Example function that returns a string plus a variable of test```
 
 ## Override auto-detected language with optional argument
-```t.message('exampleString', 'fr')```
+```translate.message('exampleString', 'fr')```
 
 returns: ```Exemple de chaîne```
 
 ## Get entire language object
-```t.getLocale('en')```
+```translate.getLocale('en')```
 
 returns: ```{
   language: "english",

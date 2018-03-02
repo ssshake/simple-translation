@@ -73,6 +73,16 @@ returns: ```Example function that returns a string plus a variable of test```
 
 returns: ```Exemple de chaîne```
 
+### Additional Helper Methods
+
+## Get list of supported Languages
+
+This method would be handy if you want to, for example, render a drop down list of supported languages in your app and then allow the user to choose which language to display.
+
+```translate.getSupportedLanguages()```
+
+returns: ```["en", "fr"]```
+
 ## Get entire language object
 ```translate.getLocale('en')```
 

@@ -30,6 +30,10 @@ export default class SimpleTranslation{
     return this.localeData[laguageCode]
   }
 
+  getSupportedLanguages(){
+    return Object.keys(this.localeData)
+  }
+
   message(key, languageCode = this.browserLanguageCode){
     if (!this.localeData[languageCode].messages[key]){
       console.error(`Simple-Translation: The message '${key}' for language code '${languageCode}' was not found`)

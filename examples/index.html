@@ -37,6 +37,9 @@
 
     console.dir(translate.getLocale('fr').messages.exampleString)
 
+    console.log("Supported Languages")
+    console.dir(translate.getSupportedLanguages())
+
 
     document.getElementById('string-example').innerHTML = translate.message('exampleString')
     document.getElementById('function-example').innerHTML = translate.message('exampleFunction')('test')

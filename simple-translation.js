@@ -50,6 +50,11 @@ export default class SimpleTranslation{
     if (!(this.isLanguageSupported(languageCode))){
       console.error(`Simple-Translation: Language definition of '${languageCode}' Not Found. Defaulting to '${this.defaultLanguage}'`)
       languageCode = this.defaultLanguage
+
+      if (!(this.isLanguageSupported(languageCode))){
+        console.error(`Simple-Translation: The DEFAULT language definition of '${languageCode}' Not Found.`)
+        return `<span style="color:red;">The Default Language of '${languageCode}' is Not Found'</span>`
+      }
     }
 
     if (!this.localeData[languageCode].messages[key]){

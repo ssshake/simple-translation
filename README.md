@@ -99,7 +99,5 @@ returns: ```{
 ----------
 
 *author: Richard Bettridge (ssshake)*
-
 *web: http://daggasoft.com*
-
 *twitter: @richbettridge*

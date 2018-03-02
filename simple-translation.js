@@ -23,11 +23,12 @@ export default class SimpleTranslation{
     this.localeData[languageFile.languageCode] = languageFile
   }
 
-  getLocale(laguageCode){
-    if (!this.localeData[laguageCode]){
-      console.error(`Simple-Translation: Language definition of '${laguageCode}' Not Found`)
+  getLocale(languageCode){
+    if (!this.localeData[languageCode]){
+      console.error(`Simple-Translation: Language definition of '${languageCode}' Not Found`)
+      return false
     }
-    return this.localeData[laguageCode]
+    return this.localeData[languageCode]
   }
 
   getSupportedLanguages(){
@@ -35,10 +36,16 @@ export default class SimpleTranslation{
   }
 
   message(key, languageCode = this.browserLanguageCode){
+
+    if (!this.getLocale(languageCode)){
+      return `<span style="color:red;">Missing Translation File '${languageCode}'</span>`
+    }
+
     if (!this.localeData[languageCode].messages[key]){
       console.error(`Simple-Translation: The message '${key}' for language code '${languageCode}' was not found`)
-      return '<span style="color:red;">Missing Translation</span>'
+      return `<span style="color:red;">Missing Translation for '${key}' for language '${this.localeData[languageCode].language}'</span>`
     }
+
     return this.localeData[languageCode].messages[key]
   }
 }

@@ -5,13 +5,18 @@
     <ul>
       <li id="string-example"></li>
       <li id="function-example"></li>
-      <li id="missing-string-example"></li>
     </ul>
 
     <div>These are examples of performing translation by explicitly specifying the language of French</div>
     <ul>
       <li id="string-example-french"></li>
       <li id="function-example-french"></li>
+    </ul>
+
+    <div>These are examples of handling invalid inputs</div>
+    <ul>
+      <li id="missing-string-example"></li>
+      <li id="missing-language-example"></li>
     </ul>
   </body>
 
@@ -34,6 +39,7 @@
     console.log(translate.message('exampleOfStringThatDoesntExist'))
 
     console.log(translate.message('exampleString', 'fr'))
+    console.log(translate.message('exampleString', 'sp'))
 
     console.dir(translate.getLocale('fr').messages.exampleString)
 
@@ -44,6 +50,7 @@
     document.getElementById('string-example').innerHTML = translate.message('exampleString')
     document.getElementById('function-example').innerHTML = translate.message('exampleFunction')('test')
     document.getElementById('missing-string-example').innerHTML = translate.message('exampleOfStringThatDoesntExist')
+    document.getElementById('missing-language-example').innerHTML = translate.message('exampleString', 'sp')
 
     document.getElementById('string-example-french').innerHTML = translate.message('exampleString', 'fr')
     document.getElementById('function-example-french').innerHTML = translate.message('exampleFunction', 'fr')('test')

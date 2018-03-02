@@ -1,5 +1,7 @@
 Simple Translations
 
+
+Structure of a language file
 ```
 
 export default {
@@ -13,6 +15,8 @@ export default {
 
 ```
 
+Default import usage with browser language auto detection
+
 ```
 
 import translate from 'simple-translation'
@@ -25,8 +29,12 @@ translate.messages.exampleFunction('John')
 ```
 
 
+Explicitly setting which translation file to use
+
 ```
 
+  import { getLocale } from '../simple-translation.js'
 
+  getLocale('fr').messages.exampleString
 
 ```

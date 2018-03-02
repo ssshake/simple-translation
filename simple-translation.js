@@ -3,9 +3,7 @@ import fr from "./languages/french.js"
 
 const localeData = { en, fr }
 
-const language = typeof navigator === "undefined"
-  ? "en"
-  : (navigator.languages && navigator.languages[0]) ||
+const language = (navigator.languages && navigator.languages[0]) ||
                   navigator.language ||
                   navigator.userLanguage
 

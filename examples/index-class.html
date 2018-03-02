@@ -1,0 +1,32 @@
+<html>
+
+  <body>
+    <div>These are examples of performing translation using the Browser's detected language</div>
+    <ul>
+      <li id="string-example"></li>
+      <li id="function-example"></li>
+    </ul>
+
+    <div>These are examples of performing translation by explicitly specifying the language of French</div>
+    <ul>
+      <li id="string-example-french"></li>
+      <li id="function-example-french"></li>
+    </ul>
+  </body>
+
+  <script type="module">
+
+    //Example using automatic browser language detection
+    import translate from '../simple-translation-class.js'
+    import english from '../languages/english.js'
+    import french from '../languages/french.js'
+    let t = new translate()
+    console.dir(t)
+    t.registerLanguage(english)
+    t.registerLanguage(french)
+    console.log(t.message('exampleString'))
+    console.log(t.message('exampleString', 'fr'))
+    // console.dir(t.getLocale('fr').messages.exampleString)
+</script>
+
+</html>

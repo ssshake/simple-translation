@@ -38,7 +38,7 @@ export default class SimpleTranslation{
     return this.localeData[languageCode]
   }
 
-  isUsersLanguageSupported(languageCode){
+  isLanguageSupported(languageCode){
     return !!~this.getSupportedLanguages().indexOf(languageCode)
   }
 
@@ -47,7 +47,7 @@ export default class SimpleTranslation{
   }
 
   message(key, languageCode = this.browserLanguageCode){
-    if (!(this.isUsersLanguageSupported(languageCode))){
+    if (!(this.isLanguageSupported(languageCode))){
       console.error(`Simple-Translation: Language definition of '${languageCode}' Not Found. Defaulting to '${this.defaultLanguage}'`)
       languageCode = this.defaultLanguage
     }

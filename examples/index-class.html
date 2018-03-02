@@ -5,6 +5,7 @@
     <ul>
       <li id="string-example"></li>
       <li id="function-example"></li>
+      <li id="missing-string-example"></li>
     </ul>
 
     <div>These are examples of performing translation by explicitly specifying the language of French</div>
@@ -22,10 +23,9 @@
     import english from '../languages/english.js'
     import french from '../languages/french.js'
 
-    let t = new translate()
+    let t = new translate(english, french)
 
     t.registerLanguage(english)
-
     t.registerLanguage(french)
 
 
@@ -40,6 +40,7 @@
 
     document.getElementById('string-example').innerHTML = t.message('exampleString')
     document.getElementById('function-example').innerHTML = t.message('exampleFunction')('test')
+    document.getElementById('missing-string-example').innerHTML = t.message('exampleOfStringThatDoesntExist')
 
     document.getElementById('string-example-french').innerHTML = t.message('exampleString', 'fr')
     document.getElementById('function-example-french').innerHTML = t.message('exampleFunction', 'fr')('test')

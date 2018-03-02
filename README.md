@@ -98,8 +98,8 @@ returns: ```{
 
 ----------
 
-*author: Richard Bettridge (ssshake)
+*author: Richard Bettridge (ssshake)*
 
-web: http://daggasoft.com
+*web: http://daggasoft.com*
 
-twitter: @richbettridge*
+*twitter: @richbettridge*

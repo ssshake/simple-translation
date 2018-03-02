@@ -94,3 +94,10 @@ returns: ```{
     exampleFunction: variable => `Example function that returns a string plus a variable of ${variable}`,
   },
 }```
+
+
+----------
+
+author: Richard Bettridge (ssshake)
+web: http://daggasoft.com
+twitter: @richbettridge

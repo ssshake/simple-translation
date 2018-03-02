@@ -1,11 +1,15 @@
 export default class SimpleTranslation{
   constructor(...languageFiles){
     this.localeData = {}
+
+    this.defaultLanguage = 'en'
+
     this.browserLanguageCode = (
       typeof navigator === "undefined"
-      ? "en"
+      ? this.defaultLanguage
       : (navigator.languages && navigator.languages[0]) || navigator.language || navigator.userLanguage
     ).toLowerCase().split(/[_-]+/)[0]
+
     languageFiles.forEach((language) => {
       this.registerLanguage(language)
     })
@@ -16,10 +20,12 @@ export default class SimpleTranslation{
       console.error(`Simple-Translation: Language File '${languageFile.language}' not found`)
       return
     }
+
     if (this.localeData[languageFile.languageCode]){
       console.error(`Simple-Translation: Language File '${languageFile.language}' already registered`)
       return
     }
+
     this.localeData[languageFile.languageCode] = languageFile
   }
 
@@ -28,7 +34,12 @@ export default class SimpleTranslation{
       console.error(`Simple-Translation: Language definition of '${languageCode}' Not Found`)
       return false
     }
+
     return this.localeData[languageCode]
+  }
+
+  isUsersLanguageSupported(languageCode){
+    return !!~this.getSupportedLanguages().indexOf(languageCode)
   }
 
   getSupportedLanguages(){
@@ -36,9 +47,9 @@ export default class SimpleTranslation{
   }
 
   message(key, languageCode = this.browserLanguageCode){
-
-    if (!this.getLocale(languageCode)){
-      return `<span style="color:red;">Missing Translation File '${languageCode}'</span>`
+    if (!this.isUsersLanguageSupported(languageCode)){
+      console.error(`Simple-Translation: Language definition of '${languageCode}' Not Found. Defaulting to '${this.defaultLanguage}'`)
+      languageCode = this.defaultLanguage
     }
 
     if (!this.localeData[languageCode].messages[key]){

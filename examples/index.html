@@ -5,6 +5,7 @@
     <ul>
       <li id="string-example"></li>
       <li id="function-example"></li>
+      <li id="missing-string-example"></li>
     </ul>
 
     <div>These are examples of performing translation by explicitly specifying the language of French</div>
@@ -19,27 +20,31 @@
     //Example using automatic browser language detection
     import translate from '../simple-translation.js'
 
-    //Logs out the translate object for your viewing pleasure
-    console.dir(translate)
+    import english from '../languages/english.js'
+    import french from '../languages/french.js'
+
+    let t = new translate(english, french)
+
+    t.registerLanguage(english)
+    t.registerLanguage(french)
 
 
-    //Tells us some info about the language that was detected and loaded
-    console.log(`Translations loaded for language ${translate.language} with a language code of ${translate.languageCode}`)
+    console.log(t.message('exampleString'))
 
-    //Shows how to use translated strings and functions
-    document.getElementById('string-example').innerHTML = translate.messages.exampleString
-    document.getElementById('function-example').innerHTML = translate.messages.exampleFunction('test')
+    console.log(t.message('exampleOfStringThatDoesntExist'))
 
-  </script>
+    console.log(t.message('exampleString', 'fr'))
 
-  <script type="module">
-    //example using explictly specified language
-    import { getLocale } from '../simple-translation.js'
-    console.dir(getLocale('fr'))
+    console.dir(t.getLocale('fr').messages.exampleString)
 
-    document.getElementById('string-example-french').innerHTML = getLocale('fr').messages.exampleString
-    document.getElementById('function-example-french').innerHTML = getLocale('fr').messages.exampleFunction('test')
 
-  </script>
+    document.getElementById('string-example').innerHTML = t.message('exampleString')
+    document.getElementById('function-example').innerHTML = t.message('exampleFunction')('test')
+    document.getElementById('missing-string-example').innerHTML = t.message('exampleOfStringThatDoesntExist')
+
+    document.getElementById('string-example-french').innerHTML = t.message('exampleString', 'fr')
+    document.getElementById('function-example-french').innerHTML = t.message('exampleFunction', 'fr')('test')
+
+</script>
 
 </html>

@@ -1,6 +1,6 @@
 {
   "name": "simple-translation",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "A super basic and simple way to do language translations. Auto detects language from the browser. Supports compiled strings. Aims to be an uncomplicated translation package",
   "main": "simple-translation.js",
   "directories": {

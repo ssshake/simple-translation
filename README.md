@@ -109,6 +109,10 @@ returns: ```{
 }```
 
 
+## Tests
+
+No tests have been written yet but the obvious first one is a test which you would include in your build process to ensure that for each language they all have the same keys. A likely bug to enter production would be missing translations for a given language file.
+
 ----------
 
 *author: Richard Bettridge (ssshake)*

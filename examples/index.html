@@ -1,30 +1,42 @@
 <html>
 
   <body>
-    <div>These are examples of performing translation using the Browser's detected language</div>
-    <ul>
-      <li id="string-example"></li>
-      <li id="function-example"></li>
-    </ul>
+    <h2>Simple Tranlsation Examples</h2>
+    <div class="container">
+      <div>These are examples of performing translation using the Browser's detected language</div>
+      <ul>
+        <li id="string-example"></li>
+        <li id="function-example"></li>
+      </ul>
+    </div>
 
-    <div>These are examples of performing translation by explicitly specifying the language of French</div>
-    <ul>
-      <li id="string-example-french"></li>
-      <li id="function-example-french"></li>
-    </ul>
+    <div class="container">
+      <div>These are examples of performing translation by explicitly specifying the language of French</div>
+      <ul>
+        <li id="string-example-french"></li>
+        <li id="function-example-french"></li>
+      </ul>
+    </div>
 
-    <div>These are examples of handling invalid inputs</div>
-    <ul>
-      <li id="missing-string-example"></li>
-      <li id="missing-language-example"></li>
-    </ul>
 
-    <div>This is an example of getSupportedLanguages</div>
-    <ul id="supported-languages">
+    <div class="container">
+      <div>These are examples of handling invalid inputs</div>
+      <ul>
+        <li id="missing-string-example"></li>
+        <li id="missing-language-example"></li>
+      </ul>
+    </div>
 
-    </ul>
+    <div class="container">
+      <div>This is an example of getSupportedLanguages()</div>
+      <ul id="supported-languages">
+      </ul>
+    </div>
 
-    <div>Check the console for error handling examples</div>
+    <div class="container">
+      <div>Check the console for error handling examples</div>
+    </div>
+
   </body>
 
   <script type="module">
@@ -64,6 +76,31 @@
 
     document.getElementById('supported-languages').innerHTML = supportedLanguages
 
-</script>
+  </script>
+
+  <style>
+    body{
+      font-family: Arial;
+      color: hsl(0, 0%, 30%);
+      background-color: hsl(0, 40%, 95%);
+    }
+
+    .container{
+      padding: 20px;
+      border: 1px solid hsl(0, 0%, 60%);
+      border-radius: 3px;
+      margin: 15px 10px;
+      background-color: hsl(0, 0%, 90%);
+    }
+
+    h2 {
+      text-align: center;
+    }
+
+    li {
+      margin: 7px;
+    }
+
+  </style>
 
 </html>

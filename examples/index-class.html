@@ -18,15 +18,30 @@
 
     //Example using automatic browser language detection
     import translate from '../simple-translation-class.js'
+
     import english from '../languages/english.js'
     import french from '../languages/french.js'
+
     let t = new translate()
-    console.dir(t)
+
     t.registerLanguage(english)
+
     t.registerLanguage(french)
+
+
     console.log(t.message('exampleString'))
+
     console.log(t.message('exampleString', 'fr'))
-    // console.dir(t.getLocale('fr').messages.exampleString)
+
+    console.dir(t.getLocale('fr').messages.exampleString)
+
+
+    document.getElementById('string-example').innerHTML = t.message('exampleString')
+    document.getElementById('function-example').innerHTML = t.message('exampleFunction')('test')
+
+    document.getElementById('string-example-french').innerHTML = t.message('exampleString', 'fr')
+    document.getElementById('function-example-french').innerHTML = t.message('exampleFunction', 'fr')('test')
+
 </script>
 
 </html>

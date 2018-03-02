@@ -59,7 +59,7 @@
     let exampleStaticWithLanguageOverridge = translate.message('exampleString', 'fr')
     let exampleDynamicWithLanguageOverridge = translate.message('exampleFunction', 'fr')('test')
 
-    let exampleInvalidString = translate.message('exampleOfStringThatDoesntExist')
+    let exampleInvalidString = translate.message('exampleOfStringThatDoesntExist', 'sp')
     let exampleInvalidLanguage = translate.message('exampleString', 'sp')
 
     document.getElementById('string-example').innerHTML = exampleStaticString

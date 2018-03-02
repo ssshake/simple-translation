@@ -5,7 +5,7 @@ export default class SimpleTranslation{
     this.defaultLanguage = 'en'
 
     this.browserLanguageCode = (
-      typeof navigator === "undefined"
+      typeof navigator === 'undefined'
       ? this.defaultLanguage
       : (navigator.languages && navigator.languages[0]) || navigator.language || navigator.userLanguage
     ).toLowerCase().split(/[_-]+/)[0]
@@ -47,7 +47,7 @@ export default class SimpleTranslation{
   }
 
   message(key, languageCode = this.browserLanguageCode){
-    if (!this.isUsersLanguageSupported(languageCode)){
+    if (!(this.isUsersLanguageSupported(languageCode))){
       console.error(`Simple-Translation: Language definition of '${languageCode}' Not Found. Defaulting to '${this.defaultLanguage}'`)
       languageCode = this.defaultLanguage
     }

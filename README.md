@@ -6,6 +6,7 @@ For those who want to support multiple languages without a lot of complication, 
 ## Features
 
 - Automatically detects and uses the browser's language settings by default
+- Falls back to default language if there is no translation file for the user's language
 - Easily override default language
 - Supports static and dynamic strings (can pass variables into text)
 - Basic error handling
@@ -31,7 +32,7 @@ Simply populate your translations in the messages object seen in the example abo
 - *languageCode: The IOS 639-1 code for a language (see: https://www.w3schools.com/tags/ref_language_codes.asp)*
 - *messages: An object contain key:value pairs of the string to translate*
 
-Messages can either be a string or a function so that you can generate string dynamically.
+Messages can either be a string or a function so that you can generate strings dynamically.
 
 For dynamic strings it will take a list of variables and return a templated string.
 
@@ -41,7 +42,7 @@ see *./examples/index.html*
 
 The example file shows various uses and error handling.
 
-The translations will default to user's browser's language. If there is no translation file for that language is will default to the english translation file. Therefore an english translation file is required at a minimum.
+The translations will default to user's browser's language. If there is no translation file for that language it will default to the english translation file. Therefore an english (or other default) translation file is required at a minimum.
 
 ### Getting Started
 
@@ -87,6 +88,27 @@ returns: ```Example function that returns a string plus a variable of test```
 returns: ```Exemple de chaîne```
 
 # Additional Helper Methods
+
+## Change the default language
+
+This package sets 'en' as the default / fallback language. If you wanted to use a different default language you can simply modify the property after instantiating simple-translation.
+
+```translate.defaultLanguage = 'de'```
+
+*from the top...*
+
+```
+
+import SimpleTranslation from '../simple-translation.js'
+
+import german from '../languages/german.js'
+import french from '../languages/french.js'
+
+let translate = new SimpleTranslate(german, french)
+
+translate.defaultLanguage = 'de'
+
+```
 
 ## Get list of supported Languages
 

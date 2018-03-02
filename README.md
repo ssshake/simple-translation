@@ -48,7 +48,7 @@ see *./examples/index.html*
     t.registerLanguage(french)
 ```
 
-#### Registering language files
+## Registering language files
 
 Option A - *specify each language file individually using the registerLanguage() method*
 
@@ -58,22 +58,22 @@ Option B - *specify the language files upon new translate, which will be automat
 
 ```let t = new translate(english, french)```
 
-**Render a static translation**
+## Render a static translation
 ```t.message('exampleString')```
 
 returns: ```Example string```
 
-**Render a dynamic translation**
+## Render a dynamic translation
 ```t.message('exampleFunction')('test')```
 
 returns: ```Example function that returns a string plus a variable of test```
 
-**Override auto-detected language with optional arguent**
+## Override auto-detected language with optional argument
 ```t.message('exampleString', 'fr')```
 
 returns: ```Exemple de chaîne```
 
-**Get entire language object**
+## Get entire language object
 ```t.getLocale('en')```
 
 returns: ```{

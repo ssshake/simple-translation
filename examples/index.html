@@ -35,6 +35,13 @@
     </div>
 
     <div class="container">
+      <div>This is an example of isUsersLanguageSupported('sp') == 
+        <span id="users-language-supported"></span>
+      </div>
+
+    </div>
+
+    <div class="container">
       <div>Check the console for error handling examples</div>
     </div>
 
@@ -47,20 +54,20 @@
     import english from '../languages/english.js'
     import french from '../languages/french.js'
 
-    let translate = new SimpleTranslation(english, french)
+    const translate = new SimpleTranslation(english, french)
 
     //Will produce error about languages already being registered because there were supplied in the new SimpleTranslation() call
     translate.registerLanguage(english)
     translate.registerLanguage(french)
 
-    let exampleStaticString = translate.message('exampleString')
-    let exampleDynamicString = translate.message('exampleFunction')('test')
+    const exampleStaticString = translate.message('exampleString')
+    const exampleDynamicString = translate.message('exampleFunction')('test')
 
-    let exampleStaticWithLanguageOverridge = translate.message('exampleString', 'fr')
-    let exampleDynamicWithLanguageOverridge = translate.message('exampleFunction', 'fr')('test')
+    const exampleStaticWithLanguageOverridge = translate.message('exampleString', 'fr')
+    const exampleDynamicWithLanguageOverridge = translate.message('exampleFunction', 'fr')('test')
 
-    let exampleInvalidString = translate.message('exampleOfStringThatDoesntExist', 'sp')
-    let exampleInvalidLanguage = translate.message('exampleString', 'sp')
+    const exampleInvalidString = translate.message('exampleOfStringThatDoesntExist', 'sp')
+    const exampleInvalidLanguage = translate.message('exampleString', 'sp')
 
     document.getElementById('string-example').innerHTML = exampleStaticString
     document.getElementById('function-example').innerHTML = exampleDynamicString
@@ -71,11 +78,16 @@
     document.getElementById('missing-string-example').innerHTML = exampleInvalidString
     document.getElementById('missing-language-example').innerHTML = exampleInvalidLanguage
 
-    let supportedLanguages = translate.getSupportedLanguages().map((language) => {
+    const supportedLanguages = translate.getSupportedLanguages().map((language) => {
       return `<li>${language}</li>`
     }).join('')
 
     document.getElementById('supported-languages').innerHTML = supportedLanguages
+
+    const usersLanguageSupported = translate.isUsersLanguageSupported('sp')
+
+    document.getElementById('users-language-supported').innerHTML = usersLanguageSupported
+
 
   </script>
 

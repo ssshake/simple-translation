@@ -27,9 +27,9 @@ export default {
 ```
 Simply populate your translations in the messages object seen in the example above and save the file somewhere in your project, such as in ./translations/english.js
 
--*language: A human readable word for the language*
--*languageCode: The IOS 639-1 code for a language (see: https://www.w3schools.com/tags/ref_language_codes.asp)*
--*messages: An object contain key:value pairs of the string to translate*
+- *language: A human readable word for the language*
+- *languageCode: The IOS 639-1 code for a language (see: https://www.w3schools.com/tags/ref_language_codes.asp)*
+- *messages: An object contain key:value pairs of the string to translate*
 
 Messages can either be a string or a function so that you can generate string dynamically.
 

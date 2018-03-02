@@ -8,7 +8,8 @@ For those who want to support multiple languages without a lot of complication, 
 - Automatically detects and uses the browser's language settings by default
 - Easily override default language
 - Supports static and dynamic strings (can pass variables into text)
-- Decent error handling
+- Basic error handling
+- Minimal, you should be able to fork it and modify it without much investment
 
 
 ### Structure of a language file
@@ -94,3 +95,12 @@ returns: ```{
     exampleFunction: variable => `Example function that returns a string plus a variable of ${variable}`,
   },
 }```
+
+
+----------
+
+*author: Richard Bettridge (ssshake)*
+
+*web: http://daggasoft.com*
+
+*twitter: @richbettridge*

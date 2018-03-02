@@ -96,6 +96,14 @@ This method would be handy if you want to, for example, render a drop down list 
 
 returns: ```["en", "fr"]```
 
+## Is User's Language Supported?
+
+This method is used internally to see if the user's default language matches any of the registered language files.  
+
+```translate.isUsersLanguageSupported('en')```
+
+returns: ```true / false```
+
 ## Get entire language object
 ```translate.getLocale('en')```
 

@@ -14,21 +14,21 @@ export default class Translate{
 
   registerLanguage(languageFile){
     if (!languageFile){
-      console.error('Simple-Translation: Language File not found')
+      console.error(`Simple-Translation: Language File '${languageFile}' not found`)
     }
     this.localeData[languageFile.languageCode] = languageFile
   }
 
   getLocale(laguageCode){
     if (!this.localeData[laguageCode]){
-      console.error('Simple-Translation: Language Definition Not Found')
+      console.error(`Simple-Translation: Language definition of '${laguageCode}' Not Found`)
     }
     return this.localeData[laguageCode]
   }
 
   message(key, languageCode = this.browserLanguageCode){
     if (!this.localeData[languageCode].messages[key]){
-      console.error(`Simple-Translation: The message ${key} for language code ${this.browserLanguageCode} was not found`)
+      console.error(`Simple-Translation: The message '${key}' for language code '${languageCode}' was not found`)
     }
     return this.localeData[languageCode].messages[key]
   }

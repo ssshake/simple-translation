@@ -50,11 +50,11 @@ see *./examples/index.html*
 
 ## Registering language files
 
-Option A - *specify each language file individually using the registerLanguage() method*
+**Option A** - *specify each language file individually using the registerLanguage() method*
 
 ```translate.registerLanguage(english)```
 
-Option B - *specify the language files upon new translate, which will be automatically registered*
+**Option B** - *specify the language files upon new translate, which will be automatically registered*
 
 ```let translate = new SimpleTranslation(english, french)```
 

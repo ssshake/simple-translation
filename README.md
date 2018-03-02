@@ -37,7 +37,7 @@ see *./examples/index.html*
 - register each language
 - call the message() method to get a translated string
 ```
-    import SimpleTranslate from '../simple-translation.js'
+    import SimpleTranslation from '../simple-translation.js'
 
     import english from '../languages/english.js'
     import french from '../languages/french.js'
@@ -56,7 +56,7 @@ Option A - *specify each language file individually using the registerLanguage()
 
 Option B - *specify the language files upon new translate, which will be automatically registered*
 
-```let translate = new SimpleTranslate(english, french)```
+```let translate = new SimpleTranslation(english, french)```
 
 ## Render a static translation
 ```translate.message('exampleString')```

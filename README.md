@@ -73,7 +73,7 @@ returns: ```Example function that returns a string plus a variable of test```
 
 returns: ```Exemple de chaîne```
 
-### Additional Helper Methods
+# Additional Helper Methods
 
 ## Get list of supported Languages
 

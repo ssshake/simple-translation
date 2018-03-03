@@ -1,4 +1,5 @@
 export default class SimpleTranslation{
+  
   constructor(...languageFiles){
     this.localeData = {}
 

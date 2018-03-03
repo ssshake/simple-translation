@@ -7,7 +7,7 @@ For those who want to support multiple languages without a lot of complication, 
 
 - Automatically detects and uses the browser's language settings by default
 - Falls back to default language if there is no translation file for the user's language
-- Easy to allow users to pick the language they want
+- Easy to allow users to switch to a differnt language (browser settings override)
 - Supports static and dynamic strings (can pass variables into text)
 - Basic error handling
 - Minimal, you should be able to fork it and modify it without much investment

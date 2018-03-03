@@ -38,7 +38,7 @@ For dynamic strings it will take a list of variables and return a templated stri
 
 ----------
 
-## Setup
+# Setup
 
 see *[./examples/index.html](https://ssshake.github.io/simple-translation/)* for a live example.
 
@@ -90,7 +90,7 @@ A benefit of Option A is that you can add new language files dynamically, later.
 
 A benefit of option B is you can instantiate 'translate' and register language files in one line. 
 
-## Usage
+# Usage
 
 ### Render a static translation
 ```translate.message('exampleString')```
@@ -163,11 +163,11 @@ returns: ```{
 
 ----------
 
-## Tests
+# Tests
 
 No tests have been written yet but the obvious first one is a test which you would include in your build process to ensure that for each language they all have the same keys. A likely bug to enter production would be missing translations for a given language file.
 
-## Compatibility
+# Compatibility
 
 This package, as is, will not work with browsers like EI 11 due to its use of many ES6 features. For a production release of your product you will want to ensure that this package is transpiled as part of your build process. 
 

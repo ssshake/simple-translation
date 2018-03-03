@@ -32,9 +32,9 @@ Simply populate your translations in the messages object seen in the example abo
 - *languageCode: The IOS 639-1 code for a language (see: https://www.w3schools.com/tags/ref_language_codes.asp)*
 - *messages: An object containing key:value pairs of the string to translate*
 
-Messages can either be a string or a function so that you can generate strings dynamically.
+Messages can either be a string or a function so that you can generate text dynamically.
 
-For dynamic strings it will take a list of variables and return a templated string.
+For dynamic text it will take a list of variables and use a templated string to inject the variables.
 
 ----------
 

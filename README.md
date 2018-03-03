@@ -138,11 +138,11 @@ returns: ```"Exemple de chaîne"```
 
 # Helper Methods
 
-## defaultLanguage - Changes the default language
+## setDefaultLanguage() - Changes the default language
 
 This package sets **the first registered language file** as the default / fallback language. If you wanted to use a different default language you can simply modify **defaultLanguage** property after instantiating simple-translation.
 
-```translate.defaultLanguage = 'de'```
+```translate.setDefaultLanguage('de')```
 
 *from the top...*
 
@@ -156,7 +156,7 @@ import french from '../languages/french.js'
 
 let translate = new SimpleTranslation(english, german, french)
 
-translate.defaultLanguage = 'de'
+translate.setDefaultLanguage('de')
 
 ```
 

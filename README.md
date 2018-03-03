@@ -38,7 +38,7 @@ For dynamic strings it will take a list of variables and return a templated stri
 
 ----------
 
-## Usage
+## Setup
 
 see *[./examples/index.html](https://ssshake.github.io/simple-translation/)* for a live example.
 
@@ -70,7 +70,7 @@ Translations will default to the user's browser's language. If there is no trans
     )
 ```
 
-## Registering language files
+### Registering language files
 
 The main piece of manual work is building out a language file for each language you support (see examples), and then registering them. Please note, that the first language file you register will be used as a default/fallback for any of your users who have their browser's language settings set to a language which you have not created a translation file for.
 
@@ -90,17 +90,19 @@ A benefit of Option A is that you can add new language files dynamically, later.
 
 A benefit of option B is you can instantiate 'translate' and register language files in one line. 
 
-## Render a static translation
+## Usage
+
+### Render a static translation
 ```translate.message('exampleString')```
 
 returns: ```Example string```
 
-## Render a dynamic translation
+### Render a dynamic translation
 ```translate.message('exampleFunction')('test')```
 
 returns: ```Example function that returns a string plus a variable of test```
 
-## Override auto-detected language with optional argument
+### Override auto-detected language with optional argument
 ```translate.message('exampleString', 'fr')```
 
 returns: ```Exemple de chaîne```

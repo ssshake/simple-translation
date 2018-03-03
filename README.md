@@ -74,7 +74,7 @@ Translations will default to the user's browser's language. If there is no trans
 
 The main piece of manual work is building out a language file for each language you support (see examples), and then registering them. Please note, that the first language file you register will be used as a default/fallback for any of your users who have their browser's language settings set to a language which you have not created a translation file for.
 
-*If you only provide language files for english, french and spansish, but your user's browser language is set to italian, the user will get english tranlsations beacuse you do not have an italian language file and you registered english as the first language file*
+*If you only provide language files for english, french and spansish, but your user's browser language is set to italian, the user will get english translations because you do not have an italian language file, and you registered english as the first language file*
 
 **Option A** - *specify each language file individually using the registerLanguage() method*
 

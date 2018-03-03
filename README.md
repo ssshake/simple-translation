@@ -30,7 +30,7 @@ Simply populate your translations in the messages object seen in the example abo
 
 - *language: A human readable word for the language*
 - *languageCode: The IOS 639-1 code for a language (see: https://www.w3schools.com/tags/ref_language_codes.asp)*
-- *messages: An object contain key:value pairs of the string to translate*
+- *messages: An object containing key:value pairs of the string to translate*
 
 Messages can either be a string or a function so that you can generate strings dynamically.
 

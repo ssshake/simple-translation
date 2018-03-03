@@ -52,7 +52,9 @@ Messages can either be a string or a function so that you can generate text dyna
 
 For dynamic text it will take a list of variables and use a templated string to inject the variables.
 
+
 ----------
+
 
 # Setup
 
@@ -131,6 +133,8 @@ const translate = new SimpleTranslation(english, french)
 ```
 
 *A benefit of **Option B** is you can instantiate 'translate' and register language files in one line.*
+
+----------
 
 # Usage
 

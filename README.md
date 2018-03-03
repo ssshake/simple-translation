@@ -36,6 +36,8 @@ Messages can either be a string or a function so that you can generate strings d
 
 For dynamic strings it will take a list of variables and return a templated string.
 
+----------
+
 ## Usage
 
 see *[./examples/index.html](https://ssshake.github.io/simple-translation/)* for a live example.
@@ -86,6 +88,8 @@ returns: ```Example function that returns a string plus a variable of test```
 ```translate.message('exampleString', 'fr')```
 
 returns: ```Exemple de chaîne```
+
+----------
 
 # Additional Helper Methods
 

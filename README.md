@@ -108,7 +108,7 @@ import SimpleTranslation from '../simple-translation.js'
 import german from '../languages/german.js'
 import french from '../languages/french.js'
 
-let translate = new SimpleTranslate(german, french)
+let translate = new SimpleTranslation(german, french)
 
 translate.defaultLanguage = 'de'
 

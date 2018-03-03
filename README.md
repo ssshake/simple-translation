@@ -64,6 +64,10 @@ Translations will default to the user's browser's language. If there is no trans
 
     translate.registerLanguage(english)
     translate.registerLanguage(french)
+    
+    console.log(
+      translate.message('exampleString')
+    )
 ```
 
 ## Registering language files

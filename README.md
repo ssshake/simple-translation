@@ -29,7 +29,7 @@ For those who want to support multiple languages without a lot of complication, 
 
 ### Structure of a language file
 
-*./languages/english.js*
+*[./languages/english.js](https://github.com/ssshake/simple-translation/blob/master/languages/english.js)*
 ```
 
 export default {

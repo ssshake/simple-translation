@@ -14,10 +14,10 @@ export default class SimpleTranslation{
       .split(/[_-]+/)[0]
     )
 
-
     languageFiles.forEach((language) => {
       this.registerLanguage(language)
     })
+    
   }
 
   registerLanguage(languageFile){

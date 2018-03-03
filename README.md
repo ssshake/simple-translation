@@ -3,6 +3,8 @@
 
 For those who want to support multiple languages without a lot of complication, dependancies or ties to a framework.
 
+This package is meant to be **Simple** in that it has a reasonable **effort:feature** ratio. 
+
 ## Features
 
 - Automatically detects and uses the browser's language settings by default

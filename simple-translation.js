@@ -8,7 +8,9 @@ export default class SimpleTranslation{
     this.browserLanguageCode = (
       (typeof navigator === 'en'
         ? this.defaultLanguage
-        : (navigator.languages && navigator.languages[0]) || navigator.language || navigator.userLanguage
+        : (navigator.languages && navigator.languages[0]) 
+          || navigator.language 
+          || navigator.userLanguage
       )
       .toLowerCase()
       .split(/[_-]+/)[0]

@@ -76,6 +76,8 @@ The main piece of manual work is building out a language file for each language 
 
 *If you only provide language files for english, french and spanish, but your user's browser language is set to italian, the user will get english translations because you do not have an italian language file, and because you registered english as the first language file*
 
+To register language files you have two options:
+
 **Option A** - *specify each language file individually using the registerLanguage() method*
 
 ```translate.registerLanguage(english)```

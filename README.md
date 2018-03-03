@@ -56,7 +56,7 @@ The translations will default to user's browser's language. If there is no trans
     import english from '../languages/english.js'
     import french from '../languages/french.js'
 
-    let translate = new SimpleTranslate()
+    let translate = new SimpleTranslation()
 
     translate.registerLanguage(english)
     translate.registerLanguage(french)

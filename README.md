@@ -60,9 +60,7 @@ see *[./examples/index.html](https://ssshake.github.io/simple-translation/)* for
 
 The example file shows various uses and error handling.
 
-**Important**
 
-Translations will default to the user's browser's language. If there is no translation file for that language it will default to whichever language file was registered first. Therefore at least one translation file is required.
 
 ### Getting Started
 
@@ -96,6 +94,10 @@ Translations will default to the user's browser's language. If there is no trans
       translate.message('exampleString')
     )
 ```
+
+**Important**
+
+Translations will default to the user's browser's language. If there is no translation file for that language it will default to whichever language file was registered first. Therefore at least one translation file is required.
 
 ### Registering language files
 

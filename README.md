@@ -111,15 +111,18 @@ To register language files you have two options:
 
 ```
 import english from '../languages/english.js'
+import french from '../languages/french.js'
 const translate = new SimpleTranslation()
 translate.registerLanguage(english)
+translate.registerLanguage(french)
 ```
 
 **Option B** - *specify the language files upon new translate, which will be automatically registered*
 
 ```
 import english from '../languages/english.js'
-const translate = new SimpleTranslation(english)
+import french from '../languages/french.js'
+const translate = new SimpleTranslation(english, french)
 ```
 
 A benefit of Option A is that you can add new language files dynamically, later. Though I don't know a good usecase for this.

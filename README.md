@@ -38,7 +38,7 @@ For dynamic strings it will take a list of variables and return a templated stri
 
 ## Usage
 
-see *./examples/index.html*
+see *[./examples/index.html(https://ssshake.github.io/simple-translation/)]*
 
 The example file shows various uses and error handling.
 

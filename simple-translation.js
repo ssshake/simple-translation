@@ -65,14 +65,14 @@ export default class SimpleTranslation{
       languageCode = this.defaultLanguage
 
       if (!(this.isLanguageSupported(languageCode))){
-        const errorMessage = `The DEFAULT language definition of '${languageCode}' Not Found.`
+        let errorMessage = `The DEFAULT language definition of '${languageCode}' Not Found.`
         console.error(`Simple-Translation: ${errorMessage}`)
         return `<span style="color:red;"> ${errorMessage}</span>`
       }
     }
 
     if (!this.localeData[languageCode].messages[key]){
-      const errorMessage = `Missing Translation for '${key}' for language '${this.localeData[languageCode].language}'`
+      let errorMessage = `Missing Translation for '${key}' for language '${this.localeData[languageCode].language}'`
       console.error(`Simple-Translation: ${errorMessage}`)
       return `<span style="color:red;">${errorMessage}</span>`
     }

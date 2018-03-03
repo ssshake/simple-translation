@@ -177,6 +177,9 @@ This method is used internally to see if the user's default language matches any
 returns: ```true / false```
 
 ## getLocale( ) - Get entire language object
+
+Because maybe you want to do your own thing. Consider submiting a feature request if you end up doing too much by hand. This package currently supports language translation but some obvious additions would be money and date/time formatting by locale.
+
 ```translate.getLocale('en')```
 
 returns: ```{

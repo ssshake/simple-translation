@@ -119,6 +119,8 @@ translate.registerLanguage(english)
 translate.registerLanguage(french)
 ```
 
+A benefit of Option A is that you can add new language files dynamically, later. Though I don't know a good usecase for this.
+
 **Option B** - *specify the language files upon new translate, which will be automatically registered*
 
 ```
@@ -127,8 +129,6 @@ import french from '../languages/french.js'
 
 const translate = new SimpleTranslation(english, french)
 ```
-
-A benefit of Option A is that you can add new language files dynamically, later. Though I don't know a good usecase for this.
 
 A benefit of option B is you can instantiate 'translate' and register language files in one line. 
 

@@ -1,5 +1,5 @@
 
-## [Live Example](https://ssshake.github.io/simple-translation/)
+## [-> Live Example](https://ssshake.github.io/simple-translation/)
 
 # Simple-Translations
 

@@ -6,7 +6,7 @@ export default class SimpleTranslation{
     this.defaultLanguage = undefined
 
     this.browserLanguageCode = (
-      typeof navigator === 'undefined'
+      typeof navigator === 'en'
         ? this.defaultLanguage
         : (navigator.languages && navigator.languages[0]) || navigator.language || navigator.userLanguage
     )

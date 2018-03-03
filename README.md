@@ -12,8 +12,11 @@ For those who want to support multiple languages without a lot of complication, 
 - Decent error handling
 - Minimal, you should be able to fork it and modify it without much investment. It's one small class.
 
-TOC
 
+
+
+
+*TOC*
 - [Language Files](https://github.com/ssshake/simple-translation/blob/master/README.md#language-files)
 - [Setup](https://github.com/ssshake/simple-translation/blob/master/README.md#setup)
 - [Usage](https://github.com/ssshake/simple-translation/blob/master/README.md#usage)

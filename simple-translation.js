@@ -3,7 +3,7 @@ export default class SimpleTranslation{
   constructor(...languageFiles){
     this.localeData = {}
 
-    this.defaultLanguage = 'en'
+    this.defaultLanguage = undefined
 
     this.browserLanguageCode = (
       typeof navigator === 'undefined'
@@ -27,6 +27,10 @@ export default class SimpleTranslation{
     if (this.localeData[languageFile.languageCode]){
       console.error(`Simple-Translation: Language File '${languageFile.language}' already registered`)
       return
+    }
+    
+    if (!this.defaultLanguage){
+      this.defaultLanguage = languageFile.languageCode
     }
 
     this.localeData[languageFile.languageCode] = languageFile

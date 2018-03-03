@@ -112,7 +112,9 @@ To register language files you have two options:
 ```
 import english from '../languages/english.js'
 import french from '../languages/french.js'
+
 const translate = new SimpleTranslation()
+
 translate.registerLanguage(english)
 translate.registerLanguage(french)
 ```
@@ -122,6 +124,7 @@ translate.registerLanguage(french)
 ```
 import english from '../languages/english.js'
 import french from '../languages/french.js'
+
 const translate = new SimpleTranslation(english, french)
 ```
 

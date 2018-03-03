@@ -1,6 +1,13 @@
 
 # Simple-Translations
 
+- [Features](https://github.com/ssshake/simple-translation/blob/master/README.md#features)
+- [Setup](https://github.com/ssshake/simple-translation/blob/master/README.md#features)
+- [Usage](https://github.com/ssshake/simple-translation/blob/master/README.md#features)
+- [Helper Methods](https://github.com/ssshake/simple-translation/blob/master/README.md#features)
+- [Tests](https://github.com/ssshake/simple-translation/blob/master/README.md#features)
+- [Compatibility](https://github.com/ssshake/simple-translation/blob/master/README.md#features)
+
 For those who want to support multiple languages without a lot of complication, dependancies or ties to a framework.
 
 ## Features
@@ -111,7 +118,7 @@ returns: ```"Exemple de chaîne"```
 
 ----------
 
-# Additional Helper Methods
+# Helper Methods
 
 ## defaultLanguage - Changes the default language
 

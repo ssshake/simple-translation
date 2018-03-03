@@ -90,7 +90,7 @@
     document.getElementById('users-language-supported').innerHTML = usersLanguageSupported
 
     //set default and browser codes from 'en' to 'de' to simulate what would happened if there was no translations to fall back to.
-    translate.defaultLanguage = 'de'
+    translate.setDefaultLanguage('de')
     translate.browserLanguageCode = 'de'
     const exampleMissingDefaultLanguage = translate.message('exampleString')
     document.getElementById('missing-default-language').innerHTML = exampleMissingDefaultLanguage

@@ -97,17 +97,17 @@ A benefit of option B is you can instantiate 'translate' and register language f
 ### Render a static translation
 ```translate.message('exampleString')```
 
-returns: ```Example string```
+returns: ```"Example string"```
 
 ### Render a dynamic translation
 ```translate.message('exampleFunction')('test')```
 
-returns: ```Example function that returns a string plus a variable of test```
+returns: ```"Example function that returns a string plus a variable of test"```
 
 ### Override auto-detected language with optional argument
 ```translate.message('exampleString', 'fr')```
 
-returns: ```Exemple de chaîne```
+returns: ```"Exemple de chaîne"```
 
 ----------
 

@@ -69,20 +69,25 @@ Translations will default to the user's browser's language. If there is no trans
 
 ```
 //import the simple-translation.js file
+
     import SimpleTranslation from '../simple-translation.js'
 
 //import your supplied translation files
+
     import english from '../languages/english.js'
     import french from '../languages/french.js'
 
 //instantiate a new SimpleTranslation
+
     let translate = new SimpleTranslation()
 
 //register each language
+
     translate.registerLanguage(english)
     translate.registerLanguage(french)
     
 //call the message() method to get a translated string
+
     console.log(
       translate.message('exampleString')
     )

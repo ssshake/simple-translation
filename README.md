@@ -10,7 +10,7 @@ For those who want to support multiple languages without a lot of complication, 
 - Easy to allow users to switch to a different language (browser settings override)
 - Supports static and dynamic strings (can pass variables into text)
 - Decent error handling
-- Minimal, you should be able to fork it and modify it without much investment
+- Minimal, you should be able to fork it and modify it without much investment. It's one small class.
 
 
 ### Structure of a language file

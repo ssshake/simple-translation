@@ -1,4 +1,6 @@
 
+## [Live Example](https://ssshake.github.io/simple-translation/)
+
 # Simple-Translations
 
 For those who want to support multiple languages without a lot of complication, dependancies or ties to a framework.

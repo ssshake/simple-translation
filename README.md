@@ -119,7 +119,7 @@ translate.registerLanguage(english)
 translate.registerLanguage(french)
 ```
 
-*A benefit of **Option A** is that you can add new language files dynamically, later. Though I don't know a good usecase for this.*
+*A benefit of **Option A** is that you can add new language files dynamically, later. Though I don't know a good use-case for this.*
 
 **Option B** - *specify the language files upon new translate, which will be automatically registered*
 

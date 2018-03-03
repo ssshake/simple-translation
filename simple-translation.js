@@ -54,6 +54,10 @@ export default class SimpleTranslation{
   getSupportedLanguages(){
     return Object.keys(this.localeData)
   }
+  
+  setDefaultLanguage(languageCode){
+    translate.defaultLanguage = languageCode
+  }
 
   message(key, languageCode = this.browserLanguageCode){
     if (!(this.isLanguageSupported(languageCode))){

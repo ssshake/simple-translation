@@ -86,6 +86,10 @@ To register language files you have two options:
 
 ```let translate = new SimpleTranslation(english, french)```
 
+A benefit of Option A is that you can add new language files dynamically, later. Though I don't know a good usecase for this.
+
+A benefit of option B is you can instantiate 'translate' and register language files in one line. 
+
 ## Render a static translation
 ```translate.message('exampleString')```
 

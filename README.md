@@ -44,7 +44,7 @@ see *[./examples/index.html](https://ssshake.github.io/simple-translation/)* for
 
 The example file shows various uses and error handling.
 
-The translations will default to user's browser's language. If there is no translation file for that language it will default to the english translation file. Therefore an english (or other default) translation file is required at a minimum.
+**Translations will default to the user's browser's language. If there is no translation file for that language it will default to whichever language file was registered first. Therefore at least one translation file is required.**
 
 ### Getting Started
 
@@ -95,7 +95,7 @@ returns: ```Exemple de chaîne```
 
 ## Change the default language
 
-This package sets 'en' as the default / fallback language. If you wanted to use a different default language you can simply modify the property after instantiating simple-translation.
+This package sets **the first registered language file** as the default / fallback language. If you wanted to use a different default language you can simply modify **defaultLanguage** property after instantiating simple-translation.
 
 ```translate.defaultLanguage = 'de'```
 
@@ -105,10 +105,11 @@ This package sets 'en' as the default / fallback language. If you wanted to use 
 
 import SimpleTranslation from '../simple-translation.js'
 
+import german from '../languages/english.js'
 import german from '../languages/german.js'
 import french from '../languages/french.js'
 
-let translate = new SimpleTranslation(german, french)
+let translate = new SimpleTranslation(english, german, french)
 
 translate.defaultLanguage = 'de'
 

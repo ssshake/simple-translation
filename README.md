@@ -130,7 +130,7 @@ import french from '../languages/french.js'
 const translate = new SimpleTranslation(english, french)
 ```
 
-*A benefit of **option B** is you can instantiate 'translate' and register language files in one line.*
+*A benefit of **Option B** is you can instantiate 'translate' and register language files in one line.*
 
 # Usage
 

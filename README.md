@@ -113,7 +113,7 @@ returns: ```"Exemple de chaîne"```
 
 # Additional Helper Methods
 
-## Change the default language
+## defaultLanguage - Changes the default language
 
 This package sets **the first registered language file** as the default / fallback language. If you wanted to use a different default language you can simply modify **defaultLanguage** property after instantiating simple-translation.
 
@@ -135,7 +135,7 @@ translate.defaultLanguage = 'de'
 
 ```
 
-## Get list of supported Languages
+## getSupportedLanguages() - Gets list of supported Languages
 
 This method would be handy if you want to, for example, render a drop down list of supported languages in your app and then allow the user to choose which language to display.
 
@@ -143,7 +143,7 @@ This method would be handy if you want to, for example, render a drop down list 
 
 returns: ```["en", "fr"]```
 
-## Is A Language Supported?
+## isLanguageSupported() - Is a language supported?
 
 This method is used internally to see if the user's default language matches any of the registered language files.  
 
@@ -151,7 +151,7 @@ This method is used internally to see if the user's default language matches any
 
 returns: ```true / false```
 
-## Get entire language object
+## getLocale() - Get entire language object
 ```translate.getLocale('en')```
 
 returns: ```{

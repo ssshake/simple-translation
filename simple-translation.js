@@ -7,9 +7,11 @@ export default class SimpleTranslation{
 
     this.browserLanguageCode = (
       typeof navigator === 'undefined'
-      ? this.defaultLanguage
-      : (navigator.languages && navigator.languages[0]) || navigator.language || navigator.userLanguage
-    ).toLowerCase().split(/[_-]+/)[0]
+        ? this.defaultLanguage
+        : (navigator.languages && navigator.languages[0]) || navigator.language || navigator.userLanguage
+    )
+    .toLowerCase()
+    .split(/[_-]+/)[0]
 
     languageFiles.forEach((language) => {
       this.registerLanguage(language)

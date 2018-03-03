@@ -143,6 +143,10 @@ returns: ```{
 
 No tests have been written yet but the obvious first one is a test which you would include in your build process to ensure that for each language they all have the same keys. A likely bug to enter production would be missing translations for a given language file.
 
+## Compatibility
+
+This package, as is, will not work with browsers like EI 11 due to its use of many ES6 features. For a production release of your product you will want to ensure that this package is transpiled as part of your build process. 
+
 ----------
 
 *author: Richard Bettridge (ssshake)*

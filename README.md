@@ -138,7 +138,7 @@ returns: ```"Exemple de chaîne"```
 
 # Helper Methods
 
-## setDefaultLanguage() - Changes the default language
+## setDefaultLanguage( ) - Changes the default language
 
 This package sets **the first registered language file** as the default / fallback language. If you wanted to use a different default language you can simply modify **defaultLanguage** property after instantiating simple-translation.
 

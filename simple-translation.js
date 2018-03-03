@@ -56,7 +56,7 @@ export default class SimpleTranslation{
   }
   
   setDefaultLanguage(languageCode){
-    translate.defaultLanguage = languageCode
+    this.defaultLanguage = languageCode
   }
 
   message(key, languageCode = this.browserLanguageCode){

@@ -3,7 +3,7 @@
 
 For those who want to support multiple languages without a lot of complication, dependancies or ties to a framework.
 
-This package is names **Simple**-Translations in that it has a reasonable **effort:feature** ratio. 
+This package is named **Simple**-Translations in that it has a reasonable **effort:feature** ratio. 
 
 ## Features
 

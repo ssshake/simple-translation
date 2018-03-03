@@ -3,14 +3,6 @@
 
 For those who want to support multiple languages without a lot of complication, dependancies or ties to a framework.
 
-- [Features](https://github.com/ssshake/simple-translation/blob/master/README.md#features)
-- [Language Files](https://github.com/ssshake/simple-translation/blob/master/README.md#language-files)
-- [Setup](https://github.com/ssshake/simple-translation/blob/master/README.md#setup)
-- [Usage](https://github.com/ssshake/simple-translation/blob/master/README.md#usage)
-- [Helper Methods](https://github.com/ssshake/simple-translation/blob/master/README.md#helper-methods)
-- [Tests](https://github.com/ssshake/simple-translation/blob/master/README.md#tests)
-- [Compatibility](https://github.com/ssshake/simple-translation/blob/master/README.md#compatibility)
-
 ## Features
 
 - Automatically detects and uses the browser's language settings by default
@@ -19,6 +11,15 @@ For those who want to support multiple languages without a lot of complication, 
 - Supports static and dynamic strings (can pass variables into text)
 - Decent error handling
 - Minimal, you should be able to fork it and modify it without much investment. It's one small class.
+
+
+- [Language Files](https://github.com/ssshake/simple-translation/blob/master/README.md#language-files)
+- [Setup](https://github.com/ssshake/simple-translation/blob/master/README.md#setup)
+- [Usage](https://github.com/ssshake/simple-translation/blob/master/README.md#usage)
+- [Helper Methods](https://github.com/ssshake/simple-translation/blob/master/README.md#helper-methods)
+- [Tests](https://github.com/ssshake/simple-translation/blob/master/README.md#tests)
+- [Compatibility](https://github.com/ssshake/simple-translation/blob/master/README.md#compatibility)
+
 
 ## Language Files
 

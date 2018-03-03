@@ -57,7 +57,7 @@
 
     const translate = new SimpleTranslation(english, french)
 
-    //Will produce error about languages already being registered because there were supplied in the new SimpleTranslation() call
+    //Will produce error about languages already being registered because they were supplied in the new SimpleTranslation() call
     translate.registerLanguage(english)
     translate.registerLanguage(french)
 

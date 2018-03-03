@@ -135,7 +135,7 @@ translate.defaultLanguage = 'de'
 
 ```
 
-## getSupportedLanguages() - Gets list of supported Languages
+## getSupportedLanguages( ) - Gets list of supported Languages
 
 This method would be handy if you want to, for example, render a drop down list of supported languages in your app and then allow the user to choose which language to display.
 
@@ -143,7 +143,7 @@ This method would be handy if you want to, for example, render a drop down list 
 
 returns: ```["en", "fr"]```
 
-## isLanguageSupported() - Is a language supported?
+## isLanguageSupported( ) - Is a language supported?
 
 This method is used internally to see if the user's default language matches any of the registered language files.  
 
@@ -151,7 +151,7 @@ This method is used internally to see if the user's default language matches any
 
 returns: ```true / false```
 
-## getLocale() - Get entire language object
+## getLocale( ) - Get entire language object
 ```translate.getLocale('en')```
 
 returns: ```{

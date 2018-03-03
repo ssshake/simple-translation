@@ -16,7 +16,7 @@ For those who want to support multiple languages without a lot of complication, 
 
 
 
-*TOC*
+#### TOC
 - [Language Files](https://github.com/ssshake/simple-translation/blob/master/README.md#language-files)
 - [Setup](https://github.com/ssshake/simple-translation/blob/master/README.md#setup)
 - [Usage](https://github.com/ssshake/simple-translation/blob/master/README.md#usage)

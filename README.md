@@ -111,7 +111,7 @@ This package sets **the first registered language file** as the default / fallba
 
 import SimpleTranslation from '../simple-translation.js'
 
-import german from '../languages/english.js'
+import english from '../languages/english.js'
 import german from '../languages/german.js'
 import french from '../languages/french.js'
 

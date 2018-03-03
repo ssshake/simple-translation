@@ -9,7 +9,7 @@ For those who want to support multiple languages without a lot of complication, 
 - Falls back to default language if there is no translation file for the user's language
 - Easy to allow users to switch to a different language (browser settings override)
 - Supports static and dynamic strings (can pass variables into text)
-- Basic error handling
+- Decent error handling
 - Minimal, you should be able to fork it and modify it without much investment
 
 
